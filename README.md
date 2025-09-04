@@ -10,11 +10,11 @@ Um sistema simples em **Java** para gerenciamento de **clientes e atendimentos d
 - 📂 Armazenamento em arquivos (`clientes.txt` e `atendimentos.txt`).  
 - 🔎 Listagem de clientes e atendimentos já cadastrados.
 
-✨ Autor
-
-Jefferson França Teodoro
-🔗 LinkedIn
-🔗 GitHub
+------------------------------------------
+### ✨ Autor
+# Jefferson França Teodoro
+🔗 [LinkedIn](https://www.linkedin.com/in/jefferson-fran%C3%A7a-teodoro-6258ba215/)
+🔗 [GitHub](https://github.com/JeffersonTeodoro)
 
 
 
