@@ -8,7 +8,15 @@ Um sistema simples em **Java** para gerenciamento de **clientes e atendimentos d
 - 📋 Cadastro de clientes (nome, telefone, e-mail).  
 - 📅 Registro de atendimentos para cada cliente.  
 - 📂 Armazenamento em arquivos (`clientes.txt` e `atendimentos.txt`).  
-- 🔎 Listagem de clientes e atendimentos já cadastrados.  
+- 🔎 Listagem de clientes e atendimentos já cadastrados.
+
+✨ Autor
+
+Jefferson França Teodoro
+🔗 LinkedIn
+🔗 GitHub
+
+
 
 ---
 
@@ -64,10 +72,3 @@ java -cp bin application.Programa
 ☕ Java 17
 📂 Arquivos TXT para persistência
 
-✨ Autor
-
-✨ Autor
-
-Jefferson França Teodoro
-🔗 LinkedIn
-🔗 GitHub
