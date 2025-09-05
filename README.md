@@ -16,12 +16,11 @@ Um sistema simples em **Java** para gerenciamento de **clientes e atendimentos d
 🔗 [LinkedIn](https://www.linkedin.com/in/jefferson-fran%C3%A7a-teodoro-6258ba215/)
 🔗 [GitHub](https://github.com/JeffersonTeodoro)
 
-
-
 ---
 
 ## 🛠 Estrutura do Projeto
 
+-----
 ProjetoPodologia/
 │── src/
 │ └── application/
@@ -66,6 +65,15 @@ java -cp bin application.Programa
 3. Registrar Atendimento
 4. Listar Atendimentos
 0. Sair
+
+👉 Exemplo de fluxo:
+Nome: Maria Silva
+Telefone: (21) 98888-7777
+Email: maria@email.com
+✅ Cliente cadastrado com sucesso!
+
+=== Lista de Clientes ===
+0 - Cliente: Maria Silva | Telefone: (21) 98888-7777 | Email: maria@email.com
 
 -------------------------
 📌 Tecnologias
