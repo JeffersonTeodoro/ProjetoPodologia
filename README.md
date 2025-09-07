@@ -1,4 +1,4 @@
-# 🦶 Projeto Podologia (Java) - Versão Visual do README
+# 🦶 Projeto Podologia (Java) - Versão Profissional com Imagens
 
 Um sistema em **Java** para gerenciamento de **clientes e atendimentos de podologia**, com **interface gráfica Swing** e **persistência em arquivos `.txt`**.
 
@@ -23,7 +23,7 @@ Um sistema em **Java** para gerenciamento de **clientes e atendimentos de podolo
 
 # Jefferson França Teodoro
 
-🔗 [LinkedIn](https://www.linkedin.com/in/jefferson-fran%C3%A7a-teodoro-6258ba215/)
+🔗 [LinkedIn](https://www.linkedin.com/in/jefferson-teodoro/)
 🔗 [GitHub](https://github.com/JeffersonTeodoro)
 
 ---
@@ -31,35 +31,63 @@ Um sistema em **Java** para gerenciamento de **clientes e atendimentos de podolo
 ## 🛠 Estrutura do Projeto
 
 ```
-ProjetoPodologia/  🏠  # Diretório principal do projeto
+ProjetoPodologia/  🏠  # Diretório principal
 │
-├── src/  💻  # Código-fonte Java
-│   ├── application/  🏗️  # Classe principal que inicia o programa
-│   │   └── Programa.java  ⚙️  # Classe principal (menu)
+├── src/  💻  # Código-fonte
+│   ├── application/  🏗️  # Classe principal
+│   │   └── Programa.java  ⚙️  # Menu principal
 │   │
-│   ├── data/  📂  # Arquivos de persistência
-│   │   ├── clientes.txt  📝  # Armazena os clientes
-│   │   └── atendimentos.txt  📝  # Armazena os atendimentos
+│   ├── data/  📂  # Persistência em arquivos
+│   │   ├── clientes.txt  📝
+│   │   └── atendimentos.txt  📝
 │   │
-│   ├── model/  🧩  # Classes de modelo de dados
-│   │   ├── Cliente.java  👤  # Modelo do cliente
-│   │   └── Atendimento.java  💼  # Modelo do atendimento
+│   ├── model/  🧩  # Modelos de dados
+│   │   ├── Cliente.java  👤
+│   │   └── Atendimento.java  💼
 │   │
-│   ├── service/  🔧  # Lógica de negócio / serviços
-│   │   └── AtendimentoService.java  📊  # Regras de negócio e manipulação de clientes/atendimentos
+│   ├── service/  🔧  # Regras de negócio
+│   │   └── AtendimentoService.java  📊
 │   │
-│   ├── util/  🛠️  # Utilitários gerais
-│   │   └── FileManager.java  💾  # Manipulação de arquivos e relatórios
+│   ├── util/  🛠️  # Utilitários
+│   │   └── FileManager.java  💾
 │   │
-│   └── view/  🖥️  # Interface gráfica (Swing)
-│       ├── MainView.java  🏠  # Janela principal com menu e tabelas
-│       ├── JanelaFinanceiro.java  💰  # Tela com relatório financeiro
-│       ├── TelaAtendimentos.java  📅  # Tela de registro e listagem de atendimentos
-│       ├── TelaClientes.java  👥  # Tela de cadastro e listagem de clientes
-│       └── TelaPrincipal.java  🏁  # Tela inicial ou painel principal do app
+│   └── view/  🖥️  # Interface Swing
+│       ├── MainView.java  🏠
+│       ├── JanelaFinanceiro.java  💰
+│       ├── TelaAtendimentos.java  📅
+│       ├── TelaClientes.java  👥
+│       └── TelaPrincipal.java  🏁
 │
-└── README.md  📖  # Documentação do projeto
+└── README.md  📖
 ```
+
+---
+
+## 📷 Screenshots das Telas
+
+### Janela Principal
+
+![MainView](docs/screenshots/mainview.png)
+
+> Janela com botões de navegação e tabelas de clientes/atendimentos.
+
+### Tela de Clientes
+
+![TelaClientes](docs/screenshots/telaclientes.png)
+
+> Formulário de cadastro de clientes com tabela de listagem.
+
+### Tela de Atendimentos
+
+![TelaAtendimentos](docs/screenshots/telaatendimentos.png)
+
+> Registro de atendimentos com seleção de clientes e campos de valor e descrição.
+
+### Relatório Financeiro
+
+![JanelaFinanceiro](docs/screenshots/janelafinanceiro.png)
+
+> Relatório financeiro automático, mostrando total recebido e comissão.
 
 ---
 
@@ -85,21 +113,18 @@ java -cp bin application.Programa
 ```
 
 ---
-
 ## 💻 Interface Gráfica
 
-* Janela principal com:
-
-  * Botões no topo: `Cadastrar Cliente`, `Registrar Atendimento`, `Relatório Financeiro`
-  * **Tabela de clientes** (nome, telefone)
-  * **Tabela de atendimentos** (cliente, data, serviço, valor, comissão)
-* Formulários em **JOptionPane** para cadastro e registro
-* Relatório financeiro automático em caixa de diálogo scrollável
-
----
+- Janela principal com:
+- Botões no topo: Cadastrar Cliente, Registrar Atendimento, Relatório Financeiro
+- Tabela de clientes (nome, telefone)
+- Tabela de atendimentos (cliente, data, serviço, valor, comissão)
+- Formulários em JOptionPane para cadastro e registro
+- Relatório financeiro automático em caixa de diálogo scrollável
 
 ## 📌 Tecnologias
 
 * ☕ Java 17
-* 📂 Arquivos TXT para persistência
 * 🖥 Swing para interface gráfica
+* 📂 Arquivos TXT para persistência
+* 💡 Estrutura modular (MVC simplificado)
