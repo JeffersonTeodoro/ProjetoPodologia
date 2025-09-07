@@ -5,10 +5,24 @@ Um sistema simples em **Java** para gerenciamento de **clientes e atendimentos d
 ---
 
 ## 🚀 Funcionalidades
-- 📋 Cadastro de clientes (nome, telefone, e-mail).  
+- 📋 Cadastro de clientes (nome, telefone).  
 - 📅 Registro de atendimentos para cada cliente.  
-- 📂 Armazenamento em arquivos (`clientes.txt` e `atendimentos.txt`).  
-- 🔎 Listagem de clientes e atendimentos já cadastrados.
+- 📊 Interface gráfica **Swing** com:
+  - Tabela de clientes
+  - Tabela de atendimentos
+  - Botões para cadastro e registro de atendimentos
+  - Relatório financeiro automático
+- 🔎 Listagem de clientes e atendimentos.  
+- 💾 Armazenamento em arquivos (`clientes.txt` e `atendimentos.txt`).  
+
+
+## 💻 Interface Gráfica
+- Janela principal com:
+- Botões no topo: Cadastrar Cliente, Registrar Atendimento, Relatório Financeiro
+- Tabela de clientes (nome, telefone)
+- Tabela de atendimentos (cliente, data, serviço, valor, comissão)
+- Formulários em JOptionPane para cadastro e registro
+- Relatório financeiro automático em caixa de diálogo scrollável
 
 ------------------------------------------
 ### ✨ Autor
@@ -22,25 +36,33 @@ Um sistema simples em **Java** para gerenciamento de **clientes e atendimentos d
 
 -----
 ProjetoPodologia/
-│── src/
-│ └── application/
+│
+├── src/ # Código-fonte Java
+│ ├── application/ # Classe principal que inicia o programa
 │ │ └── Programa.java # Classe principal (menu)
 │ │
-│ └── model/
+│ ├── data/ # Arquivos de persistência
+│ │ ├── clientes.txt # Armazena os clientes
+│ │ └── atendimentos.txt # Armazena os atendimentos
+│ │
+│ ├── model/ # Classes de modelo de dados
 │ │ ├── Cliente.java # Modelo do cliente
 │ │ └── Atendimento.java # Modelo do atendimento
 │ │
-│ └── service/
-│ │ └── AtendimentoService.java # Regras de negócio
+│ ├── service/ # Lógica de negócio / serviços
+│ │ └── AtendimentoService.java # Regras de negócio e manipulação de clientes/atendimentos
 │ │
-│ └── util/
-│ └── FileManager.java # Manipulação de arquivos
+│ ├── util/ # Utilitários gerais
+│ │ └── FileManager.java # Manipulação de arquivos e relatórios
+│ │
+│ └── view/ # Interface gráfica (Swing)
+│ ├── MainView.java # Janela principal com menu e tabelas
+│ ├── JanelaFinanceiro.java # Tela com relatório financeiro
+│ ├── TelaAtendimentos.java # Tela de registro e listagem de atendimentos
+│ ├── TelaClientes.java # Tela de cadastro e listagem de clientes
+│ └── TelaPrincipal.java # Tela inicial ou painel principal do app
 │
-│── data/
-│ ├── clientes.txt # Armazena os clientes
-│ └── atendimentos.txt # Armazena os atendimentos
-│
-│── README.md
+└── README.md # Documentação do projeto
 
 
 ---
