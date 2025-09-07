@@ -1,17 +1,14 @@
 package model;
 
 public class Cliente {
-    private String nome;
-    private String telefone;
-    private String email;
+    private final String nome;
+    private final String telefone;
 
-    public Cliente(String nome, String telefone, String email) {
+    public Cliente(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
-        this.email = email;
     }
 
-    // === GETTERS ===
     public String getNome() {
         return nome;
     }
@@ -20,25 +17,12 @@ public class Cliente {
         return telefone;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    // === SETTERS (opcional, caso precise atualizar dados) ===
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     @Override
     public String toString() {
-        return "Cliente: " + nome + " | Telefone: " + telefone + " | Email: " + email;
+        return nome + " | " + telefone;
+    }
+
+    public String getEmail() {
+        throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
     }
 }

@@ -1,0 +1,2 @@
+Maria Silva;21988887777;2025-09-05 15:30;Tratamento de unha;120.0;60.0
+João Souza;21999998888;2025-09-05 16:00;Limpeza de calosidade;150.0;75.0
